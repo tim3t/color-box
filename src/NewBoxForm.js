@@ -26,11 +26,11 @@ function NewBoxForm({ createBox }) {
 		<div>
 			<form onSubmit={gatherInput}>
 				<div>
-					<label htmlFor='height'>Height</label>
+					<label htmlFor='height'>Height (in px)</label>
 					<input onChange={handleChange} type='text' name='height' value={formData.height} id='height' />
 				</div>
 				<div>
-					<label htmlFor='width'>Width</label>
+					<label htmlFor='width'>Width (in px)</label>
 					<input onChange={handleChange} type='text' name='width' id='width' value={formData.width} />
 				</div>
 				<div>

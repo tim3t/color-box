@@ -6,12 +6,12 @@ function Box({ id, handleRemove, width = 5, height = 5, backgroundColor = 'blue'
 		<div>
 			<div
 				style={{
-					height: `${height}em`,
-					width: `${width}em`,
+					height: `${height}px`,
+					width: `${width}px`,
 					backgroundColor
 				}}
 			/>
-			<button onClick={remove}>Remove The Box!</button>
+			<button onClick={remove}>Remove Above Box</button>
 		</div>
 	);
 }
