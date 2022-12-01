@@ -1,14 +1,19 @@
 import React from 'react';
 
-const Box = ({ backgroundColor, width, height }) => {
-	const boxStyling = {
-		backgroundColor: backgroundColor,
-		width: width,
-		height: height,
-		margin: '20px',
-		border: '2px solid black'
-	};
-	return <div className='Box' style={boxStyling} />;
-};
+function Box({ id, handleRemove, width = 5, height = 5, backgroundColor = 'blue' }) {
+	const remove = () => handleRemove(id);
+	return (
+		<div>
+			<div
+				style={{
+					height: `${height}em`,
+					width: `${width}em`,
+					backgroundColor
+				}}
+			/>
+			<button onClick={remove}>Remove The Box!</button>
+		</div>
+	);
+}
 
 export default Box;
