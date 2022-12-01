@@ -25,7 +25,7 @@ function NewTodoForm({ createTodo }) {
 			<form onSubmit={gatherInput}>
 				<div>
 					<label htmlFor='task'>Task</label>
-					<input onChange={handleChange} type='text' name='height' value={formData.task} id='task' />
+					<input onChange={handleChange} type='text' name='task' value={formData.task} id='task' />
 				</div>
 				<button id='newTodoButton'>Add a new task!</button>
 			</form>

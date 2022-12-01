@@ -1,11 +1,7 @@
 import React from 'react';
 
-const Todo = () => {
-	return (
-		<div>
-			<p>This is a todo item</p>
-		</div>
-	);
-};
+function Todo({ id, task = 'wash the dog' }) {
+	return <div>{task}</div>;
+}
 
 export default Todo;
